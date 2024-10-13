@@ -16,11 +16,10 @@ const Sidebar = () => {
           <Button
             asChild
             className='w-full mb-2 capitalize font-normal justify-start'
+            key={link.href}
             variant={variant}
           >
-            <Link href={link.href} key={link.href}>
-              {link.label}
-            </Link>
+            <Link href={link.href}>{link.label}</Link>
           </Button>
         )
       })}
